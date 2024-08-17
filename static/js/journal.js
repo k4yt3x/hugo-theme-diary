@@ -251,12 +251,7 @@ let night = document.cookie.replace(
 );
 
 if (night == "") {
-  if (
-    window.matchMedia &&
-    window.matchMedia("(prefers-color-scheme: dark)").matches
-  ) {
     toggleDarkMode();
-  }
 } else {
   // If night is not empty
   if (night === "1") {
